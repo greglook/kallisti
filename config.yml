@@ -1,0 +1,72 @@
+---
+:data_file: kallisti.yml
+:mail_password: <REDACTED>
+:sailmail_address: wde9906@sailmail.com
+:spot_address: noreply@findmespot.com
+:mail_server: mail.mvxcvi.com
+:legs:
+- !ruby/object:Leg
+  from: 2009-09-15 00:00:00 Z
+  name: Seattle -> San Francisco
+  to: 2009-09-27 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-09-27 00:00:00 Z
+  name: San Francisco
+  to: 2009-10-07 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-10-02 00:00:00 Z
+  name: San Francisco -> Hawaii
+  to: 2009-11-02 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-11-02 00:00:00 Z
+  name: Hawaii
+  to: 2009-11-07 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-11-07 00:00:00 Z
+  name: Hawaii -> Majuro
+  to: 2009-11-25 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-11-25 00:00:00 Z
+  name: Majuro
+  to: 2009-12-01 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-12-01 00:00:00 Z
+  name: Majuro -> Pohnpei
+  to: 2009-12-10 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-12-10 00:00:00 Z
+  name: Pohnpei
+  to: 2009-12-17 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-12-17 00:00:00 Z
+  name: Pohnpei -> Guam
+  to: 2009-12-28 00:00:00 Z
+- !ruby/object:Leg
+  from: 2009-12-28 00:00:00 Z
+  name: Guam
+  to: 2010-01-04 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-01-04 00:00:00 Z
+  name: Guam -> Rota
+  to: 2010-01-06 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-01-06 00:00:00 Z
+  name: Rota
+  to: 2010-01-24 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-01-24 00:00:00 Z
+  name: Rota -> Saipan
+  to: 2010-01-26 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-01-26 00:00:00 Z
+  name: Saipan
+  to: 2010-02-22 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-02-22 00:00:00 Z
+  name: Saipan -> Japan
+  to: 2010-03-08 00:00:00 Z
+- !ruby/object:Leg
+  from: 2010-03-08 00:00:00 Z
+  name: Japan
+  to: 2010-08-01 00:00:00 Z
+:mail_account: kallisti@mvxcvi.com
