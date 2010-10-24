@@ -1,10 +1,10 @@
-#!/usr/bin/ruby
-
 # A class representing a waypoint marker tying together textual media with a time and geocoordinate
+
 
 require 'geocoordinate'
 
 
+module Kallisti
 class Waypoint
 	include Comparable
 	
@@ -20,12 +20,11 @@ class Waypoint
 	attr_accessor :location, :title, :text
 	
 	
-	
 	# construct a new waypoint with a time and location
 	def initialize(source, time, location = nil, title = nil, text = nil)
 		
 		# always require correct source and times
-		raise "source must be one of " + Waypoint::SOURCES.join(', ') + "!" unless Waypoint::SOURCES.include? source
+		raise "source must be one of " + SOURCES.join(', ') + "!" unless SOURCES.include? source
 		raise "time must be a Time or Numeric!" unless time.is_a? Time or time.is_a? Numeric
 		
 		# require coordinate except for :message and :sail_mail sources
@@ -50,6 +49,7 @@ class Waypoint
 		    @text.nil? ? "" : @text.chomp)
 	end
 	
+	
 	# is the location known or interpolated?
 	def known_location?
 		( @source == :spot ) or ( @source == :waypoint )
@@ -61,4 +61,13 @@ class Waypoint
 		@time <=> other.time
 	end
 	
+	
+	# duplicated waypoint detection (same category within 5 minutes)
+	def duplicates?(other)
+		window = (@time - 300)..(@time + 300)
+		( @source == other.source ) and ( window === other.time )
+	end
+	
 end
+end
+

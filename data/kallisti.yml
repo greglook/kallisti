@@ -1,5 +1,76 @@
---- 
-- !ruby/object:Waypoint 
+--- !ruby/object:Kallisti::Voyage 
+author: Greg Look
+desc: A map of Kevin and Ted's journey around the world!
+distance: 8421.27536971425
+duration: 17844963.0
+legs: 
+- !ruby/object:Kallisti::Leg 
+  from: 2009-09-15 00:00:00 Z
+  name: Seattle -> San Francisco
+  to: 2009-09-27 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-09-27 00:00:00 Z
+  name: San Francisco
+  to: 2009-10-02 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-10-02 00:00:00 Z
+  name: San Francisco -> Hawaii
+  to: 2009-11-02 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-11-02 00:00:00 Z
+  name: Hawaii
+  to: 2009-11-07 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-11-07 00:00:00 Z
+  name: Hawaii -> Majuro
+  to: 2009-11-25 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-11-25 00:00:00 Z
+  name: Majuro
+  to: 2009-12-01 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-12-01 00:00:00 Z
+  name: Majuro -> Pohnpei
+  to: 2009-12-10 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-12-10 00:00:00 Z
+  name: Pohnpei
+  to: 2009-12-17 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-12-17 00:00:00 Z
+  name: Pohnpei -> Guam
+  to: 2009-12-28 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2009-12-28 00:00:00 Z
+  name: Guam
+  to: 2010-01-04 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-01-04 00:00:00 Z
+  name: Guam -> Rota
+  to: 2010-01-06 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-01-06 00:00:00 Z
+  name: Rota
+  to: 2010-01-24 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-01-24 00:00:00 Z
+  name: Rota -> Saipan
+  to: 2010-01-26 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-01-26 00:00:00 Z
+  name: Saipan
+  to: 2010-02-22 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-02-22 00:00:00 Z
+  name: Saipan -> Japan
+  to: 2010-03-08 00:00:00 Z
+- !ruby/object:Kallisti::Leg 
+  from: 2010-03-08 00:00:00 Z
+  name: Japan
+  to: 2010-08-01 00:00:00 Z
+name: Kallisti's Voyage
+waypoints: 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 47.68077
     longitude: -122.40649
@@ -19,7 +90,7 @@
     Kevin
   time: 2009-09-15 19:12:00 Z
   title: Casting Off!
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 47.68077
     longitude: -122.40649
@@ -27,7 +98,7 @@
   text: 
   time: 2009-09-16 05:44:27 Z
   title: Day 0
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 47.68383
     longitude: -122.41995
@@ -35,7 +106,7 @@
   text: Traveled 0.6 nmi at 0.0 knots
   time: 2009-09-16 19:22:40 Z
   title: Day 1
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.16724
     longitude: -122.88199
@@ -43,7 +114,7 @@
   text: Traveled 34.5 nmi at 4.1 knots
   time: 2009-09-17 03:46:48 Z
   title: Day 1
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.167293710332
     longitude: -122.882450554853
@@ -51,7 +122,7 @@
   text: We are underway! Just rounded Port Townsend, heading out the Strait. Running engine for now, hoping winds pick back up and we can enjoy a beautiful night sail :)
   time: 2009-09-17 03:47:00 Z
   title: SailMail test
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.36907
     longitude: -124.61264
@@ -59,7 +130,7 @@
   text: Traveled 70.2 nmi at 5.6 knots
   time: 2009-09-17 16:18:21 Z
   title: Day 1
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.43052
     longitude: -124.72881
@@ -67,7 +138,7 @@
   text: Traveled 5.9 nmi at 0.9 knots
   time: 2009-09-17 22:57:12 Z
   title: Day 2
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.31939
     longitude: -125.98063
@@ -75,7 +146,7 @@
   text: Traveled 50.4 nmi at 3.1 knots
   time: 2009-09-18 15:27:05 Z
   title: Day 2
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 48.0881013688562
     longitude: -126.081106692012
@@ -83,7 +154,7 @@
   text: Weather has been a little rough, some minor problems with sails/equipment, but it's been a good learning experience so far. Forecast for heavier winds tonight, gonna play it very safe, hope to make good progress over weekend with more favorable weather. Cheers!
   time: 2009-09-18 22:29:00 Z
   title: Loving the open ocean
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 47.38456
     longitude: -126.38674
@@ -91,7 +162,7 @@
   text: Traveled 58.5 nmi at 2.1 knots
   time: 2009-09-19 19:52:24 Z
   title: Day 4
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 47.1194513647801
     longitude: -126.450460086763
@@ -132,7 +203,7 @@
     Kevin
   time: 2009-09-19 23:00:00 Z
   title: Ship's Log Day 4
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 46.57018
     longitude: -126.58248
@@ -140,7 +211,7 @@
   text: Traveled 49.5 nmi at 5.2 knots
   time: 2009-09-20 05:28:41 Z
   title: Day 4
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 45.6171827400966
     longitude: -126.311447313182
@@ -161,7 +232,7 @@
     Kevin
   time: 2009-09-21 01:10:00 Z
   title: Ship's Log Day 5
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 45.59606
     longitude: -126.30544
@@ -169,7 +240,7 @@
   text: Traveled 59.6 nmi at 3.0 knots
   time: 2009-09-21 01:36:11 Z
   title: Day 5
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 44.78473
     longitude: -126.18757
@@ -177,7 +248,7 @@
   text: Traveled 49.0 nmi at 2.8 knots
   time: 2009-09-21 18:55:35 Z
   title: Day 5
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 44.614942546367
     longitude: -126.247891805387
@@ -208,7 +279,7 @@
     Kevin
   time: 2009-09-21 23:30:00 Z
   title: Ship's Log Day 6
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 43.74501
     longitude: -126.55696
@@ -216,7 +287,7 @@
   text: Traveled 64.4 nmi at 2.3 knots
   time: 2009-09-22 22:56:01 Z
   title: Day 7
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 43.28571
     longitude: -126.30827
@@ -224,7 +295,7 @@
   text: Traveled 29.6 nmi at 1.9 knots
   time: 2009-09-23 14:30:57 Z
   title: Day 7
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 42.6313949053983
     longitude: -126.540280364514
@@ -255,7 +326,7 @@
     Kevin
   time: 2009-09-24 01:30:00 Z
   title: Ship's Log Day 8
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 42.53534
     longitude: -126.57434
@@ -263,7 +334,7 @@
   text: Traveled 46.5 nmi at 3.7 knots
   time: 2009-09-24 03:06:45 Z
   title: Day 8
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 41.85004
     longitude: -127.21535
@@ -271,7 +342,7 @@
   text: Traveled 50.1 nmi at 4.6 knots
   time: 2009-09-24 14:04:58 Z
   title: Day 8
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 40.83143
     longitude: -126.50218
@@ -279,7 +350,7 @@
   text: Traveled 69.1 nmi at 5.7 knots
   time: 2009-09-25 02:06:46 Z
   title: Day 9
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 40.8130930553004
     longitude: -126.488621267488
@@ -300,7 +371,7 @@
     Kevin
   time: 2009-09-25 02:20:00 Z
   title: Ship's Log Day 9
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 39.75022
     longitude: -125.70271
@@ -308,7 +379,7 @@
   text: Traveled 74.5 nmi at 5.7 knots
   time: 2009-09-25 15:07:03 Z
   title: Day 9
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 38.97807
     longitude: -124.86185
@@ -316,7 +387,7 @@
   text: Traveled 60.6 nmi at 5.4 knots
   time: 2009-09-26 02:21:26 Z
   title: Day 10
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 38.9537620504732
     longitude: -124.820014807917
@@ -335,7 +406,7 @@
     Kevin
   time: 2009-09-26 03:00:00 Z
   title: Ship's Log Day 10
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 38.49189
     longitude: -124.02511
@@ -343,7 +414,7 @@
   text: Traveled 48.9 nmi at 3.8 knots
   time: 2009-09-26 15:12:48 Z
   title: Day 10
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 38.09508
     longitude: -123.36623
@@ -351,7 +422,7 @@
   text: Traveled 39.1 nmi at 3.4 knots
   time: 2009-09-27 02:36:12 Z
   title: Day 11
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 38.0946288163219
     longitude: -123.365011669801
@@ -370,7 +441,7 @@
     Kevin
   time: 2009-09-27 02:40:00 Z
   title: Ship's Log Day 11
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.99091
     longitude: -123.08494
@@ -378,7 +449,7 @@
   text: Traveled 14.7 nmi at 1.0 knots
   time: 2009-09-27 17:13:33 Z
   title: Day 11
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8335
     longitude: -122.47466
@@ -386,7 +457,7 @@
   text: Traveled 30.4 nmi at 5.4 knots
   time: 2009-09-27 22:53:12 Z
   title: Day 12
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8333783327851
     longitude: -122.474759195934
@@ -402,7 +473,7 @@
     Kevin
   time: 2009-09-28 01:12:00 Z
   title: Arrived in San Francisco!
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8236677462799
     longitude: -122.482676289273
@@ -437,7 +508,7 @@
     Kevin
   time: 2009-10-05 17:50:00 Z
   title: Ship's Log Day 19
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8216420046828
     longitude: -122.484327887279
@@ -455,7 +526,7 @@
     Ted
   time: 2009-10-07 08:21:00 Z
   title: Ship's Log Day 21
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8212195003773
     longitude: -122.484672357308
@@ -479,7 +550,7 @@
     Kevin
   time: 2009-10-07 16:23:00 Z
   title: Last net access before Hawaii
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.8199888031889
     longitude: -122.485675751337
@@ -490,7 +561,7 @@
     Kevin
   time: 2009-10-08 15:47:00 Z
   title: SSB working again
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.81991
     longitude: -122.48574
@@ -498,7 +569,7 @@
   text: Traveled 1.0 nmi at 0.0 knots
   time: 2009-10-08 17:16:54 Z
   title: Day 22
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.49746
     longitude: -122.48698
@@ -506,7 +577,7 @@
   text: Traveled 19.4 nmi at 2.8 knots
   time: 2009-10-09 00:19:10 Z
   title: Day 23
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 37.4483761801652
     longitude: -122.547482494261
@@ -537,7 +608,7 @@
     Kevin
   time: 2009-10-09 01:40:00 Z
   title: Ship's Log Day 23
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 36.93753
     longitude: -123.17717
@@ -545,7 +616,7 @@
   text: Traveled 47.1 nmi at 3.1 knots
   time: 2009-10-09 15:41:17 Z
   title: Day 23
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 36.727836444243
     longitude: -123.348117771532
@@ -556,7 +627,7 @@
     Kevin
   time: 2009-10-09 22:31:00 Z
   title: Need some wind
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 36.3444972099867
     longitude: -123.660626124974
@@ -579,7 +650,7 @@
     Kevin
   time: 2009-10-10 11:00:00 Z
   title: Ship's Log Day 24
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 36.32597
     longitude: -123.67573
@@ -587,7 +658,7 @@
   text: Traveled 43.9 nmi at 2.2 knots
   time: 2009-10-10 11:36:12 Z
   title: Day 24
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 36.10972
     longitude: -123.89321
@@ -595,7 +666,7 @@
   text: Traveled 16.7 nmi at 1.3 knots
   time: 2009-10-11 00:37:27 Z
   title: Day 25
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.75025
     longitude: -124.29618
@@ -603,7 +674,7 @@
   text: Traveled 29.1 nmi at 2.4 knots
   time: 2009-10-11 12:53:57 Z
   title: Day 25
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.7240235165663
     longitude: -124.433374721386
@@ -614,7 +685,7 @@
     Kevin
   time: 2009-10-11 19:10:00 Z
   title: Becalmed FTL
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.6640453866553
     longitude: -124.747129435896
@@ -641,7 +712,7 @@
     Kevin
   time: 2009-10-12 09:30:00 Z
   title: Ship's Log Day 26
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.64374
     longitude: -124.85335
@@ -649,7 +720,7 @@
   text: Traveled 27.9 nmi at 1.1 knots
   time: 2009-10-12 14:21:09 Z
   title: Day 26
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.14836
     longitude: -125.60487
@@ -657,7 +728,7 @@
   text: Traveled 47.3 nmi at 1.9 knots
   time: 2009-10-13 14:44:29 Z
   title: Day 27
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 34.32252
     longitude: -124.83035
@@ -665,7 +736,7 @@
   text: Traveled 62.6 nmi at 3.2 knots
   time: 2009-10-14 10:19:06 Z
   title: Day 28
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 33.9733400449053
     longitude: -124.684824462593
@@ -676,7 +747,7 @@
     Kevin
   time: 2009-10-14 20:37:00 Z
   title: Should have been more specific...
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 33.773
     longitude: -124.60133
@@ -684,7 +755,7 @@
   text: Traveled 34.9 nmi at 2.2 knots
   time: 2009-10-15 02:31:31 Z
   title: Day 29
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 33.60354
     longitude: -125.28888
@@ -692,7 +763,7 @@
   text: Traveled 35.8 nmi at 2.9 knots
   time: 2009-10-15 14:44:52 Z
   title: Day 29
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 33.3862477385695
     longitude: -125.623334680326
@@ -729,7 +800,7 @@
     Kevin
   time: 2009-10-16 01:00:00 Z
   title: Ship's Log Day 30
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 33.10702
     longitude: -126.05312
@@ -737,7 +808,7 @@
   text: Traveled 48.6 nmi at 2.1 knots
   time: 2009-10-16 14:10:28 Z
   title: Day 30
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 32.8701051498211
     longitude: -126.447263781306
@@ -760,7 +831,7 @@
     Kevin
   time: 2009-10-16 21:00:00 Z
   title: Ship's Log Day 31
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 32.7931647093023
     longitude: -126.575265872093
@@ -773,7 +844,7 @@
     "Disregard all of the above" - Ted
   time: 2009-10-16 23:13:00 Z
   title: Good weather
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 32.76208
     longitude: -126.62698
@@ -781,7 +852,7 @@
   text: Traveled 35.6 nmi at 3.6 knots
   time: 2009-10-17 00:06:44 Z
   title: Day 31
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 32.2006
     longitude: -127.31159
@@ -789,7 +860,7 @@
   text: Traveled 48.4 nmi at 4.0 knots
   time: 2009-10-17 12:12:50 Z
   title: Day 31
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 31.8415720804446
     longitude: -127.871035542097
@@ -806,7 +877,7 @@
     Kevin
   time: 2009-10-18 00:00:00 Z
   title: Ship's Log Day 32
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 31.57327
     longitude: -128.28911
@@ -814,7 +885,7 @@
   text: Traveled 62.5 nmi at 3.0 knots
   time: 2009-10-18 08:48:28 Z
   title: Day 32
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 30.9155599948815
     longitude: -128.695787059498
@@ -827,7 +898,7 @@
     Kevin
   time: 2009-10-18 23:19:00 Z
   title: "\"A Day at Sea\" in haiku"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 30.85984
     longitude: -128.73024
@@ -835,7 +906,7 @@
   text: Traveled 48.5 nmi at 3.1 knots
   time: 2009-10-19 00:32:45 Z
   title: Day 33
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 30.62857
     longitude: -129.07745
@@ -843,7 +914,7 @@
   text: Traveled 22.7 nmi at 2.1 knots
   time: 2009-10-19 11:15:56 Z
   title: Day 33
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.89298
     longitude: -129.70367
@@ -851,7 +922,7 @@
   text: Traveled 54.8 nmi at 4.2 knots
   time: 2009-10-20 00:20:11 Z
   title: Day 34
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.8706228702567
     longitude: -129.762571342977
@@ -874,7 +945,7 @@
     Kevin
   time: 2009-10-20 01:00:00 Z
   title: Ship's Log Day 34
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.49641
     longitude: -130.74846
@@ -882,7 +953,7 @@
   text: Traveled 59.5 nmi at 5.1 knots
   time: 2009-10-20 12:06:27 Z
   title: Day 34
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.3110156939833
     longitude: -131.284950673396
@@ -895,7 +966,7 @@
     Kevin
   time: 2009-10-20 20:27:00 Z
   title: For those watching closely...
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.21755
     longitude: -131.55542
@@ -903,7 +974,7 @@
   text: Traveled 45.4 nmi at 3.6 knots
   time: 2009-10-21 00:39:21 Z
   title: Day 35
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 28.83011
     longitude: -133.33516
@@ -911,7 +982,7 @@
   text: Traveled 96.3 nmi at 4.8 knots
   time: 2009-10-21 20:30:56 Z
   title: Day 36
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 28.23513
     longitude: -135.1166
@@ -919,7 +990,7 @@
   text: Traveled 100.5 nmi at 4.6 knots
   time: 2009-10-22 18:33:56 Z
   title: Day 36
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 26.78947
     longitude: -136.68121
@@ -927,7 +998,7 @@
   text: Traveled 120.3 nmi at 4.5 knots
   time: 2009-10-23 21:07:52 Z
   title: Day 38
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 26.7864853645605
     longitude: -136.693680952867
@@ -938,7 +1009,7 @@
     Kevin
   time: 2009-10-23 21:16:00 Z
   title: <3 trade winds
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 26.6932766676395
     longitude: -137.083142677659
@@ -963,7 +1034,7 @@
     Kevin
   time: 2009-10-24 01:30:00 Z
   title: Ship's Log Day 38
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 26.2899839199377
     longitude: -138.76825462863
@@ -974,7 +1045,7 @@
     Kevin
   time: 2009-10-24 19:49:00 Z
   title: Halfway(ish)!
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 26.28651
     longitude: -138.78277
@@ -982,7 +1053,7 @@
   text: Traveled 116.9 nmi at 5.1 knots
   time: 2009-10-24 19:58:28 Z
   title: Day 39
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 25.7287474728564
     longitude: -139.735639035789
@@ -1003,7 +1074,7 @@
     Kevin
   time: 2009-10-25 07:30:00 Z
   title: Ship's Log Day 39
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 25.08307
     longitude: -140.8387
@@ -1011,7 +1082,7 @@
   text: Traveled 132.6 nmi at 5.3 knots
   time: 2009-10-25 20:50:32 Z
   title: Day 40
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 24.86579
     longitude: -143.00075
@@ -1019,7 +1090,7 @@
   text: Traveled 118.4 nmi at 5.3 knots
   time: 2009-10-26 19:05:30 Z
   title: Day 40
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 24.1227170467341
     longitude: -144.160404468434
@@ -1036,7 +1107,7 @@
     Kevin
   time: 2009-10-27 08:00:00 Z
   title: Ship's Log Day 41
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 23.40307
     longitude: -145.2835
@@ -1044,7 +1115,7 @@
   text: Traveled 152.8 nmi at 6.0 knots
   time: 2009-10-27 20:30:05 Z
   title: Day 42
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 23.3990112251129
     longitude: -145.291880808765
@@ -1055,7 +1126,7 @@
     Kevin
   time: 2009-10-27 20:36:00 Z
   title: Tropical
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 22.43316
     longitude: -147.28623
@@ -1063,7 +1134,7 @@
   text: Traveled 125.1 nmi at 5.3 knots
   time: 2009-10-28 20:03:58 Z
   title: Day 43
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 22.323441590584
     longitude: -147.839655466595
@@ -1082,7 +1153,7 @@
     Kevin
   time: 2009-10-29 01:30:00 Z
   title: Ship's Log Day 43
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.91946
     longitude: -149.87736
@@ -1090,7 +1161,7 @@
   text: Traveled 147.3 nmi at 5.8 knots
   time: 2009-10-29 21:30:27 Z
   title: Day 44
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.1918812366933
     longitude: -151.685948027263
@@ -1101,7 +1172,7 @@
     K
   time: 2009-10-30 19:35:00 Z
   title: Happy (pre-)Halloween
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.13772
     longitude: -151.82058
@@ -1109,7 +1180,7 @@
   text: Traveled 118.2 nmi at 5.0 knots
   time: 2009-10-30 21:13:36 Z
   title: Day 45
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.2497180034137
     longitude: -154.795215464015
@@ -1138,7 +1209,7 @@
     Kevin
   time: 2009-11-01 04:30:00 Z
   title: Ship's Log Day 46
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.30266
     longitude: -156.20134
@@ -1146,7 +1217,7 @@
   text: Traveled 245.4 nmi at 5.3 knots
   time: 2009-11-01 19:16:59 Z
   title: Day 47
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.28664
     longitude: -157.84212
@@ -1154,7 +1225,7 @@
   text: Traveled 91.8 nmi at 3.3 knots
   time: 2009-11-02 22:45:57 Z
   title: Day 48
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.28664
     longitude: -157.84212
@@ -1168,7 +1239,7 @@
     P.S. I'd love to hear feedback about our various communications - SailMail, SPOT, frequency/content of updates, the Ship's Log, etc. This is (mostly) for you guys, so let me know what you like/dislike. If you get e-mail to me before Friday or so of this week, I can incorporate that feedback into how I do things on the next leg. Thanks!
   time: 2009-11-03 00:34:00 Z
   title: Aloha!
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.28664
     longitude: -157.84212
@@ -1201,7 +1272,7 @@
     Ted
   time: 2009-11-06 22:37:00 Z
   title: Ship's Log, Abridged
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.28664
     longitude: -157.84212
@@ -1228,7 +1299,7 @@
     Kevin
   time: 2009-11-07 20:44:00 Z
   title: "Next stop: Majuro, Marshall Islands"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.28664
     longitude: -157.84212
@@ -1236,7 +1307,7 @@
   text: Traveled 0.0 nmi at 0.0 knots
   time: 2009-11-08 01:00:00 Z
   title: Day 53
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 20.1692
     longitude: -159.13898
@@ -1244,7 +1315,7 @@
   text: Traveled 99.0 nmi at 4.6 knots
   time: 2009-11-08 22:35:00 Z
   title: Day 54
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 19.45025
     longitude: -160.5237
@@ -1252,7 +1323,7 @@
   text: Traveled 89.3 nmi at 3.8 knots
   time: 2009-11-09 22:00:00 Z
   title: Day 55
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 18.9446310243056
     longitude: -162.275542895833
@@ -1265,7 +1336,7 @@
     K
   time: 2009-11-10 19:53:00 Z
   title: Still plenty of bacon
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 18.4336208333333
     longitude: -164.046065
@@ -1302,7 +1373,7 @@
     Kevin
   time: 2009-11-11 18:00:00 Z
   title: Ship's Log Day 56
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 18.3412
     longitude: -164.36628
@@ -1310,7 +1381,7 @@
   text: Traveled 228.2 nmi at 4.8 knots
   time: 2009-11-11 22:00:00 Z
   title: Day 57
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 18.2849036893204
     longitude: -164.558058252427
@@ -1323,7 +1394,7 @@
     18d16'N, 164d33'W
   time: 2009-11-11 23:38:00 Z
   title: SPOT snafu
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 17.92702
     longitude: -165.77722
@@ -1331,7 +1402,7 @@
   text: Traveled 84.3 nmi at 7.0 knots
   time: 2009-11-12 10:01:00 Z
   title: Day 57
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 17.4872
     longitude: -166.85012
@@ -1339,7 +1410,7 @@
   text: Traveled 66.8 nmi at 5.5 knots
   time: 2009-11-12 22:06:00 Z
   title: Day 58
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 17.01152
     longitude: -167.67247
@@ -1347,7 +1418,7 @@
   text: Traveled 55.1 nmi at 3.6 knots
   time: 2009-11-13 13:14:00 Z
   title: Day 58
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.93941926097
     longitude: -167.896370646651
@@ -1372,7 +1443,7 @@
     Kevin
   time: 2009-11-13 16:00:00 Z
   title: Ship's Log Day 58
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.82345
     longitude: -168.2565
@@ -1380,7 +1451,7 @@
   text: Traveled 35.4 nmi at 4.9 knots
   time: 2009-11-13 20:27:00 Z
   title: Day 59
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.8231965963567
     longitude: -168.261035282838
@@ -1396,7 +1467,7 @@
     *I spent 3 days coming up with that one
   time: 2009-11-13 20:37:00 Z
   title: Tech fail
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.79702
     longitude: -168.72953
@@ -1404,7 +1475,7 @@
   text: Traveled 27.2 nmi at 1.6 knots
   time: 2009-11-14 13:50:00 Z
   title: Day 59
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.7208748183254
     longitude: -169.117761121643
@@ -1427,7 +1498,7 @@
     Kevin
   time: 2009-11-14 20:00:00 Z
   title: Ship's Log Day 60
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.66675
     longitude: -169.39372
@@ -1435,7 +1506,7 @@
   text: Traveled 39.0 nmi at 3.7 knots
   time: 2009-11-15 00:23:00 Z
   title: Day 60
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 16.23693
     longitude: -170.10823
@@ -1443,7 +1514,7 @@
   text: Traveled 48.6 nmi at 4.2 knots
   time: 2009-11-15 12:02:00 Z
   title: Day 60
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.64805
     longitude: -170.97602
@@ -1451,7 +1522,7 @@
   text: Traveled 61.3 nmi at 5.1 knots
   time: 2009-11-15 23:58:00 Z
   title: Day 61
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.6432881805746
     longitude: -170.984830807114
@@ -1464,7 +1535,7 @@
     K @ 15d38.883'N 170d58.561'W @ 1258 utc-11
   time: 2009-11-16 00:05:00 Z
   title: 2 months
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.15078
     longitude: -171.89612
@@ -1472,7 +1543,7 @@
   text: Traveled 61.1 nmi at 5.0 knots
   time: 2009-11-16 12:09:00 Z
   title: Day 61
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.7956949301676
     longitude: -172.499002723464
@@ -1495,7 +1566,7 @@
     Kevin
   time: 2009-11-16 19:30:00 Z
   title: Ship's Log Day 62
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.57427
     longitude: -172.87495
@@ -1503,7 +1574,7 @@
   text: Traveled 66.5 nmi at 5.6 knots
   time: 2009-11-17 00:05:00 Z
   title: Day 62
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.85612
     longitude: -173.85148
@@ -1511,7 +1582,7 @@
   text: Traveled 71.3 nmi at 5.8 knots
   time: 2009-11-17 12:29:00 Z
   title: Day 62
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.1543
     longitude: -174.87797
@@ -1519,7 +1590,7 @@
   text: Traveled 73.3 nmi at 6.0 knots
   time: 2009-11-18 00:46:00 Z
   title: Day 63
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.1322068845619
     longitude: -174.898648817802
@@ -1532,7 +1603,7 @@
     K @ 13d09.258'N 174d52.678'W @ 1346 utc-11
   time: 2009-11-18 01:05:00 Z
   title: Fresh fish
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 12.31825
     longitude: -175.6605
@@ -1540,7 +1611,7 @@
   text: Traveled 68.0 nmi at 5.7 knots
   time: 2009-11-18 12:45:00 Z
   title: Day 63
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 11.80605
     longitude: -176.30905
@@ -1548,7 +1619,7 @@
   text: Traveled 48.9 nmi at 5.1 knots
   time: 2009-11-18 22:20:00 Z
   title: Day 64
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 11.41993
     longitude: -177.55098
@@ -1556,7 +1627,7 @@
   text: Traveled 76.6 nmi at 5.5 knots
   time: 2009-11-19 12:20:00 Z
   title: Day 64
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 11.2604248251748
     longitude: -177.964995384615
@@ -1585,7 +1656,7 @@
     Kevin
   time: 2009-11-19 18:00:00 Z
   title: Ship's Log Day 64
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 11.0845
     longitude: -178.42163
@@ -1593,7 +1664,7 @@
   text: Traveled 55.1 nmi at 4.6 knots
   time: 2009-11-20 00:15:00 Z
   title: Day 65
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 11.0723556805556
     longitude: -178.455545416667
@@ -1608,7 +1679,7 @@
     *Shamelessly quoted without permission from the Kaiser Chiefs
   time: 2009-11-20 00:38:00 Z
   title: Due to lack of interest, tomorrow is cancelled*
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 10.70433
     longitude: -179.48333
@@ -1616,7 +1687,7 @@
   text: Traveled 66.6 nmi at 5.6 knots
   time: 2009-11-20 12:15:00 Z
   title: Day 65
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 10.34175
     longitude: 179.28445
@@ -1624,7 +1695,7 @@
   text: Traveled 75.9 nmi at 5.5 knots
   time: 2009-11-21 02:10:00 Z
   title: Day 66
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 9.928
     longitude: 178.62228
@@ -1632,7 +1703,7 @@
   text: Traveled 46.4 nmi at 4.3 knots
   time: 2009-11-21 13:00:00 Z
   title: Day 66
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 9.80619102040816
     longitude: 178.045457142857
@@ -1657,7 +1728,7 @@
     Kevin
   time: 2009-11-21 21:00:00 Z
   title: Ship's Log Day 67
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 9.74148
     longitude: 177.73902
@@ -1665,7 +1736,7 @@
   text: Traveled 53.4 nmi at 4.4 knots
   time: 2009-11-22 01:15:00 Z
   title: Day 67
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 8.81037
     longitude: 176.67507
@@ -1673,7 +1744,7 @@
   text: Traveled 84.3 nmi at 5.7 knots
   time: 2009-11-22 16:00:00 Z
   title: Day 67
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 8.61965
     longitude: 175.88668
@@ -1681,7 +1752,7 @@
   text: Traveled 48.2 nmi at 4.9 knots
   time: 2009-11-23 01:45:00 Z
   title: Day 68
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 8.35172
     longitude: 175.06753
@@ -1689,7 +1760,7 @@
   text: Traveled 51.2 nmi at 4.4 knots
   time: 2009-11-23 13:30:00 Z
   title: Day 68
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 8.17431291666667
     longitude: 174.681888333333
@@ -1708,7 +1779,7 @@
     Kevin
   time: 2009-11-23 19:00:00 Z
   title: Ship's Log Day 68
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.96465
     longitude: 174.22613
@@ -1716,7 +1787,7 @@
   text: Traveled 55.1 nmi at 4.6 knots
   time: 2009-11-24 01:30:00 Z
   title: Day 69
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.86685
     longitude: 173.26968
@@ -1724,7 +1795,7 @@
   text: Traveled 57.2 nmi at 4.3 knots
   time: 2009-11-24 14:45:00 Z
   title: Day 69
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.6272
     longitude: 172.52975
@@ -1732,7 +1803,7 @@
   text: Traveled 46.3 nmi at 4.4 knots
   time: 2009-11-25 01:15:00 Z
   title: Day 70
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.57739
     longitude: 172.25518
@@ -1740,7 +1811,7 @@
   text: Traveled 16.6 nmi at 5.3 knots
   time: 2009-11-25 04:23:00 Z
   title: Day 70
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.27057
     longitude: 171.43682
@@ -1748,7 +1819,7 @@
   text: Traveled 52.1 nmi at 4.9 knots
   time: 2009-11-25 15:02:00 Z
   title: Day 70
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.10702
     longitude: 171.37127
@@ -1756,7 +1827,7 @@
   text: Traveled 10.6 nmi at 1.5 knots
   time: 2009-11-25 22:00:00 Z
   title: Day 71
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.10784
     longitude: 171.3682
@@ -1764,7 +1835,7 @@
   text: Traveled 0.2 nmi at 0.2 knots
   time: 2009-11-25 22:57:58 Z
   title: Day 71
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.10991449808023
     longitude: 171.322568784381
@@ -1777,7 +1848,7 @@
     Kevin
   time: 2009-11-26 02:34:00 Z
   title: Safe in Majuro
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.17527031014958
     longitude: 169.884984830498
@@ -1818,7 +1889,7 @@
     Kevin
   time: 2009-11-30 20:00:00 Z
   title: Ship's Log Day 76
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.18480576730281
     longitude: 169.675240360001
@@ -1834,7 +1905,7 @@
     Kevin
   time: 2009-12-01 12:33:00 Z
   title: Leaving for Pohnpei
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.21234
     longitude: 169.06959
@@ -1842,7 +1913,7 @@
   text: Traveled 137.1 nmi at 0.8 knots
   time: 2009-12-03 12:20:21 Z
   title: Day 78
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.13082912881312
     longitude: 167.573367358732
@@ -1865,7 +1936,7 @@
     Kevin
   time: 2009-12-05 09:00:00 Z
   title: Ship's Log Day 80
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.04687413302046
     longitude: 166.032280093642
@@ -1888,7 +1959,7 @@
     Kevin
   time: 2009-12-07 07:00:00 Z
   title: Ship's Log Day 82
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.97204468024875
     longitude: 164.658702313888
@@ -1909,7 +1980,7 @@
     Kevin
   time: 2009-12-09 00:00:00 Z
   title: Ship's Log Day 84
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.90375519997537
     longitude: 163.405172998625
@@ -1928,7 +1999,7 @@
     Ted
   time: 2009-12-10 13:25:00 Z
   title: "Re: Good news from Micronesia"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.88556495088696
     longitude: 163.071270757855
@@ -1941,7 +2012,7 @@
     Kevin
   time: 2009-12-10 23:23:00 Z
   title: Good news from Micronesia
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.75111528371177
     longitude: 160.603297673907
@@ -1957,7 +2028,7 @@
     Kevin
   time: 2009-12-14 01:03:00 Z
   title: Extending our stay in Pohnpei
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.58128892809206
     longitude: 157.485946151806
@@ -1971,7 +2042,7 @@
     Kevin
   time: 2009-12-17 22:06:00 Z
   title: Leaving for Palau
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.48565323723259
     longitude: 155.730446745487
@@ -2026,7 +2097,7 @@
     Kevin
   time: 2009-12-20 02:30:00 Z
   title: Ship's Log Day 95
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 6.47128
     longitude: 155.46661
@@ -2034,7 +2105,7 @@
   text: Traveled 812.1 nmi at 2.0 knots
   time: 2009-12-20 10:22:31 Z
   title: Day 95
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.0296402734375
     longitude: 154.005534312052
@@ -2045,7 +2116,7 @@
     Kevin
   time: 2009-12-21 23:29:00 Z
   title: SailMail test
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.1577894921875
     longitude: 153.670202955484
@@ -2068,7 +2139,7 @@
     Kevin
   time: 2009-12-22 08:00:00 Z
   title: Ship's Log Day 97
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 7.60869
     longitude: 152.49032
@@ -2076,7 +2147,7 @@
   text: Traveled 190.0 nmi at 2.5 knots
   time: 2009-12-23 13:57:59 Z
   title: Day 98
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 9.38598340589376
     longitude: 150.203720950179
@@ -2087,7 +2158,7 @@
     Merry Christmas!
   time: 2009-12-25 01:05:00 Z
   title: Change of plans
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 9.43237655449605
     longitude: 150.14403326487
@@ -2132,7 +2203,7 @@
     Kevin
   time: 2009-12-25 02:00:00 Z
   title: Ship's Log Day 100
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 10.02216
     longitude: 149.38524
@@ -2140,7 +2211,7 @@
   text: Traveled 234.4 nmi at 4.9 knots
   time: 2009-12-25 13:39:12 Z
   title: Day 100
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 12.3003
     longitude: 146.02062
@@ -2148,7 +2219,7 @@
   text: Traveled 240.8 nmi at 5.5 knots
   time: 2009-12-27 09:47:36 Z
   title: Day 102
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.44989
     longitude: 144.66932
@@ -2156,7 +2227,7 @@
   text: Traveled 105.0 nmi at 4.1 knots
   time: 2009-12-28 11:10:52 Z
   title: Day 103
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.4957698455422
     longitude: 144.700896211204
@@ -2167,7 +2238,7 @@
     Kevin
   time: 2009-12-29 02:41:00 Z
   title: Arrived in Guam
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.6346228041157
     longitude: 144.7964599668
@@ -2182,7 +2253,7 @@
     Kevin
   time: 2009-12-31 01:36:00 Z
   title: More pictures up
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.7799868072831
     longitude: 144.896504864754
@@ -2226,7 +2297,7 @@
     Feel free to send more questions. Ted loves answering them.
   time: 2010-01-02 02:43:00 Z
   title: Q&A
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 13.9961830834564
     longitude: 145.045299159879
@@ -2247,7 +2318,7 @@
     Kevin
   time: 2010-01-05 03:46:00 Z
   title: Plans for January
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.13926
     longitude: 145.14377
@@ -2255,7 +2326,7 @@
   text: Traveled 49.8 nmi at 0.2 knots
   time: 2010-01-07 04:06:38 Z
   title: Day 113
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.1423314715166
     longitude: 145.145307604341
@@ -2277,7 +2348,7 @@
     Kevin
   time: 2010-01-07 07:16:00 Z
   title: "Re: Plans for January"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.256907469368
     longitude: 145.202665307534
@@ -2316,7 +2387,7 @@
     Kevin
   time: 2010-01-12 05:00:00 Z
   title: Ship's Log Day 118
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.5576208046122
     longitude: 145.353204919258
@@ -2347,7 +2418,7 @@
     Kevin
   time: 2010-01-25 02:00:00 Z
   title: Ship's Log Day 131
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.559729366294
     longitude: 145.354260482879
@@ -2360,7 +2431,7 @@
     Kevin
   time: 2010-01-25 04:10:00 Z
   title: Leaving for Tinian/Saipan
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 14.6095400811017
     longitude: 145.379196143483
@@ -2371,7 +2442,7 @@
     Kevin
   time: 2010-01-27 07:21:00 Z
   title: Arrived in Saipan
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.1911624914859
     longitude: 145.670361188618
@@ -2404,7 +2475,7 @@
     Kevin
   time: 2010-02-21 05:00:00 Z
   title: Ship's Log Day 158
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.2185900130553
     longitude: 145.684091635404
@@ -2420,7 +2491,7 @@
     P.S. If you're bored, fire up Google maps and try to find the 3 or 4 buildings on Pagan, which or may or may not be abandoned now.
   time: 2010-02-22 09:11:00 Z
   title: Leaving Saipan
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.2263592518677
     longitude: 145.68798098136
@@ -2431,7 +2502,7 @@
     Ted
   time: 2010-02-22 17:10:00 Z
   title: "Re: Leaving Saipan"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 15.23235
     longitude: 145.69098
@@ -2439,7 +2510,7 @@
   text: Traveled 72.9 nmi at 0.1 knots
   time: 2010-02-22 23:19:21 Z
   title: Day 160
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 17.64808
     longitude: 145.26363
@@ -2447,7 +2518,7 @@
   text: Traveled 147.1 nmi at 2.9 knots
   time: 2010-02-25 02:50:53 Z
   title: Day 162
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 17.6549177088083
     longitude: 145.263505118232
@@ -2470,7 +2541,7 @@
     Kevin
   time: 2010-02-25 03:00:00 Z
   title: Ship's Log Day 162
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 19.9049864208653
     longitude: 145.222410569389
@@ -2493,7 +2564,7 @@
     Kevin
   time: 2010-02-27 05:00:00 Z
   title: Ship's Log Day 164
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 20.02219
     longitude: 145.22027
@@ -2501,7 +2572,7 @@
   text: Traveled 142.6 nmi at 2.7 knots
   time: 2010-02-27 07:36:16 Z
   title: Day 164
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 21.1745582632991
     longitude: 144.917038977303
@@ -2520,7 +2591,7 @@
     Kevin
   time: 2010-02-28 05:00:00 Z
   title: Ship's Log Day 165
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 22.2759987434622
     longitude: 144.627208951713
@@ -2531,7 +2602,7 @@
     K
   time: 2010-03-01 01:27:00 Z
   title: Maug was awesome
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 23.61788
     longitude: 144.27411
@@ -2539,7 +2610,7 @@
   text: Traveled 222.2 nmi at 3.3 knots
   time: 2010-03-02 02:21:51 Z
   title: Day 167
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 24.7739248745455
     longitude: 143.644145154251
@@ -2560,7 +2631,7 @@
     Kevin
   time: 2010-03-03 06:00:00 Z
   title: Ship's Log Day 168
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 25.61527
     longitude: 143.18567
@@ -2568,7 +2639,7 @@
   text: Traveled 133.8 nmi at 2.8 knots
   time: 2010-03-04 02:06:46 Z
   title: Day 169
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0988
     longitude: 142.20012
@@ -2576,7 +2647,7 @@
   text: Traveled 103.7 nmi at 4.2 knots
   time: 2010-03-05 02:53:47 Z
   title: Day 170
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0987984158676
     longitude: 142.200120198017
@@ -2587,7 +2658,7 @@
     Kevin
   time: 2010-03-05 09:05:00 Z
   title: We're in Japan
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0987802025773
     longitude: 142.200122474678
@@ -2604,7 +2675,7 @@
     Ted
   time: 2010-03-08 08:13:00 Z
   title: "Re: We're in Japan"
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0987769294767
     longitude: 142.200122883815
@@ -2627,7 +2698,7 @@
     Kevin
   time: 2010-03-08 21:00:00 Z
   title: Ship's Log Day 174
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0987326337987
     longitude: 142.200128420775
@@ -2650,7 +2721,7 @@
     Kevin
   time: 2010-03-16 02:00:00 Z
   title: Ship's Log Day 181
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.0986719512804
     longitude: 142.20013600609
@@ -2669,7 +2740,7 @@
     Kevin
   time: 2010-03-25 23:00:00 Z
   title: Ship's Log Day 191
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.09864
     longitude: 142.20014
@@ -2677,7 +2748,7 @@
   text: Traveled 0.0 nmi at 0.0 knots
   time: 2010-03-31 03:47:17 Z
   title: Day 196
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 27.08012
     longitude: 142.17802
@@ -2685,7 +2756,7 @@
   text: Traveled 1.6 nmi at 0.0 knots
   time: 2010-04-03 04:06:42 Z
   title: Day 199
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 28.3561
     longitude: 141.43239
@@ -2693,7 +2764,7 @@
   text: Traveled 86.3 nmi at 3.6 knots
   time: 2010-04-04 04:16:32 Z
   title: Day 200
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 29.600476905907
     longitude: 141.030479538401
@@ -2714,7 +2785,7 @@
     Kevin
   time: 2010-04-04 22:00:00 Z
   title: Ship's Log Day 201
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 30.03886
     longitude: 140.88889
@@ -2722,7 +2793,7 @@
   text: Traveled 105.0 nmi at 4.4 knots
   time: 2010-04-05 04:14:39 Z
   title: Day 201
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 31.4624830546695
     longitude: 140.100805046341
@@ -2741,7 +2812,7 @@
     Kevin
   time: 2010-04-06 20:00:00 Z
   title: Ship's Log Day 203
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 32.61142
     longitude: 139.46478
@@ -2749,7 +2820,7 @@
   text: Traveled 170.9 nmi at 2.4 knots
   time: 2010-04-08 04:05:06 Z
   title: Day 204
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 34.67558
     longitude: 139.64361
@@ -2757,7 +2828,7 @@
   text: Traveled 124.3 nmi at 4.9 knots
   time: 2010-04-09 05:38:27 Z
   title: Day 205
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.2416816255662
     longitude: 139.751006286802
@@ -2778,7 +2849,7 @@
     Kevin
   time: 2010-04-09 21:00:00 Z
   title: Ship's Log Day 206
-- !ruby/object:Waypoint 
+- !ruby/object:Kallisti::Waypoint 
   location: !ruby/object:Geocoordinate 
     latitude: 35.65206
     longitude: 139.82886

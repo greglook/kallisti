@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-
 # A class to represent a geographic coordinate.
 
 class Geocoordinate
@@ -104,3 +102,4 @@ class Geocoordinate
 	end
 	
 end
+
