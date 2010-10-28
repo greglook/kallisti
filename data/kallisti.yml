@@ -1,8 +1,8 @@
 --- !ruby/object:Kallisti::Voyage 
 author: Greg Look
 desc: A map of Kevin and Ted's journey around the world!
-distance: 8421.27536971425
-duration: 17844963.0
+distance: 9150.72346869708
+duration: 34945620.0
 legs: 
 - !ruby/object:Kallisti::Leg 
   from: 2009-09-15 00:00:00 Z
@@ -2857,3 +2857,183 @@ waypoints:
   text: Traveled 59.3 nmi at 2.2 knots
   time: 2010-04-10 08:08:03 Z
   title: Day 206
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 35.6479326812998
+    longitude: 139.837687275859
+  source: :log
+  text: "Wow! Hard to believe it\xE2\x80\x99s been three and a half months since my last journal entry. The time has flown by like nothing, and at the same time, quite a lot has happened. It\xE2\x80\x99s going to be another couple months before Kallisti sets sail again, but I wanted to provide a mid-summer update.\n\n\
+    First of all, I should go over what our plans are, since as of the last entry (and even up until a month ago) quite a lot was up in the air. The short story is, we\xE2\x80\x99re going to try and make it to Boston as originally planned. The details are a little more complicated: because of the West Pacific typhoon season, we don\xE2\x80\x99t really want to leave Tokyo much earlier than October. Besides which, I\xE2\x80\x99m going to Burning Man in early September. And since we were going to be waiting anyway, Ted\xE2\x80\x99s got a job for a few months in New York.\n\n\
+    We\xE2\x80\x99ve penciled in October 10th as our departure date from Yumenoshima, the marina we\xE2\x80\x99re staying in. For most of August and September the boat will be there unattended, while Ted and I enjoy some stateside shore leave. I\xE2\x80\x99m scheduled to get back on September 26th, and Ted a few days thereafter, whereupon we\xE2\x80\x99ll tackle some lingering maintenance tasks (on which, more below), stock up on provisions, and set out on the next leg.\n\n\
+    From Tokyo, we have a few choices on specifics, but we\xE2\x80\x99ll be heading generally towards Singapore. We\xE2\x80\x99ll want to reach there before the end of 2010, so we can head across the Indian Ocean as soon as the favorable northeast winter monsoon sets in. It\xE2\x80\x99s important to finish before the monsoon switches to the southwest, because once this happens it will become virtually impossible to sail into the Gulf of Aden and the Red Sea beyond. But if we leave Singapore on time in early January, we should make the Red Sea no later than the end of March, and then slog our way up to the Suez by late April.\n\n\
+    It\xE2\x80\x99s hard to take any planning past that point very seriously right now, as there are so many unknowns and lurking obstacles between here and there. But insofar as there\xE2\x80\x99s a plan, it\xE2\x80\x99s to wait out the Atlantic hurricane season somewhere in the Mediterranean and then do the last couple passages in October of 2011. This will provide another nice summer to relax and do some (non-aquatic) travel.\n\n\
+    As I mentioned, we didn\xE2\x80\x99t really finalize these plans until pretty recently. In fact, for a while we were leaning towards selling the boat somewhere around Japan and calling that good enough. Since this was a pretty major turning point in the trip, I want to do it full justice and be clear about the arguments on both sides.\n\n\
+    For the first month or so after we reached Japan, we didn\xE2\x80\x99t really think about next steps at all. I took my three week trip back to the states, and found myself coming to terms with some serious culture shock. Everything from my \xE2\x80\x9Cold life\xE2\x80\x9D seemed so familiar, and yet somehow very alien, as though I was a completely different person seeing someone else\xE2\x80\x99s memories. At the same time I missed it all terribly, and remembered how much I\xE2\x80\x99d been enjoying myself.\n\n\
+    Returning to Tokyo in early May, I reflected that I felt like I had largely achieved most of what I\xE2\x80\x99d set out to achieve by undertaking this adventure in the first place. I had thoroughly shaken up my world, grown and matured in a lot of ways, and achieved the (in my opinion pretty damn impressive) feat of sailing across the Pacific Ocean. At the same time, seven months with not much else to think about had generated a lot of ideas of things to work on, projects to undertake, new directions for my life. I came to the conclusion that if we stopped the trip, I would be more than happy to jump on to some new crazy endeavor back on land, and I said so to Ted.\n\n\
+    Ted, on the other hand, expressed immediate resistance to the idea of stopping. I don\xE2\x80\x99t want to put words in his mouth, but from our conversations I understood his feeling to be: we set out to sail around the world, and anything less is admitting defeat. I have to admit that this argument strikes a bit of a chord with me, because I\xE2\x80\x99m somewhat of a perennial starter. I\xE2\x80\x99ve always had a tendency to take on ambitious goals, give them 110%, and then just when they\xE2\x80\x99re starting to seem possible I lose interest and jump to something else. But, on the other hand, blindly pursuing a goal just because you said you would is a fool\xE2\x80\x99s errand; plans are a framework for decision-making, not an end unto themselves. In the end, we decided to both think on it for a while longer, and return to the discussion in June.\n\n\
+    Meanwhile, living in Tokyo was proving to be a very enlightening experience. In fact, all my time in Japan, now totaling over 4 months, has been fascinating. Being completely immersed in a culture so fundamentally different provides so much perspective on everything from culture, to nutrition, to language, to philosophy. For anyone who has never traveled abroad, I can\xE2\x80\x99t recommend it enough. And I don\xE2\x80\x99t just mean a one or two week vacation either: to really appreciate it you have to live amongst the people, not just visit. I\xE2\x80\x99ve found it to be so transformative that I\xE2\x80\x99m seriously looking for a way to make 2, 3, or 6 month overseas travel a regular part of my life, once this trip\xE2\x80\x99s over.\n\n\
+    Another complication in my decision-making process is Naomi. Naomi is the girl I met in Chichijima when we stopped there in March. I didn\xE2\x80\x99t mention her in this journal at the time, for a variety of reasons. There are lots of people reading this journal that I\xE2\x80\x99ve never even met. And the idea of having a girlfriend on a tiny remote island who doesn\xE2\x80\x99t even speak English (although she\xE2\x80\x99s learning now) just seemed too crazy, too fantastic, to take seriously. Plus, as those who know me will attest, I\xE2\x80\x99m the last person you would call a romantic, so the whole situation is a little embarrassing (as I\xE2\x80\x99m told the story is quite appallingly romantic).\n\n\
+    After living in Tokyo for a month, I went back to Chichijima (this time by the Japanese 25-hour ferry ride) to see Naomi again. Both of us had spent the intervening two months trying to learn each others\xE2\x80\x99 languages, and this time things went wonderfully. Falling in love with somebody you can only minimally talk with is a strange experience, and I couldn\xE2\x80\x99t help but think about what pre-language homo sapiens\xE2\x80\x99 courtships must have been like. But there it was, we were falling in love with each other, and I decided \xE2\x80\x9CScrew it, I might as well live in the fantasy world and see what happens.\xE2\x80\x9D Trouble was, if Ted and I decided to go to Boston after all, it could be another year before Naomi could see each other again.\n\n\
+    As June rolled by, the time was coming for us to bite the bullet and agree on a plan. I laid out my thoughts to Ted as plainly as I could: I\xE2\x80\x99d prefer to stop, for all the above reasons, but I also understand the appeal of finishing the trip. There\xE2\x80\x99s no doubt in my mind that if and when we sail into Boston, it will be a truly amazing feeling, and everything will have been worth it. So, I left the decision to him. After a few days\xE2\x80\x99 contemplation, he replied back and said: let\xE2\x80\x99s do it.\n\n\
+    Because some people (including e.g. our parents) may question the wisdom of this choice, I want to clarify that I really am 100% behind it. Yes it will be hard, yes there will be some dangers, but that\xE2\x80\x99s been true from the start. There\xE2\x80\x99s no way to like what we\xE2\x80\x99ve done so far and at the same time deny the appeal of continuing onwards. There are some logistical downsides to the plan, from my perspective, but over the past month I\xE2\x80\x99ve thought through most of them and come up with reasonable compromises. The one thing I really feel bad about is leaving Naomi for so long, but she\xE2\x80\x99s been wonderfully understanding, so we\xE2\x80\x99ll just have to cross our fingers and hope things work out. In the end, that\xE2\x80\x99s all anyone can ever do anyway, so there\xE2\x80\x99s no point in worrying.\n\n\
+    Having made the decision to keep going, my attention turned backed to logistics. Kallisti got a little beat up on the Pacific crossing, resulting in a laundry list of to-do items small and large. After some considerable deliberation we gave in and spent the $4000 to pick up a replacement windvane, which is sitting in parts in the cabin right now. Its assembly is the primary task awaiting us when we get back in late September. The broken main traveler has been professionally repaired via the installation of a large steel plate. A few days of troubleshooting with a multimeter revealed a corroded wire as the cause of our automatic bilge pump woes, and we\xE2\x80\x99ve installed a temporary fix to keep the boat floating in our absence, but re-running new wire will be another day or two\xE2\x80\x99s work before we set sail again.\n\n\
+    The good news is, we\xE2\x80\x99re 8000 miles more experienced than we were last time. In fact, looking back on how totally unprepared we were when we first crawled out past Cape Flattery into the Pacific, I find the picture almost laughable. I know enough to know we\xE2\x80\x99re still novices in a lot of respects, and I\xE2\x80\x99m certain that we\xE2\x80\x99ll hit our share of disasters of all sorts and degrees. But I\xE2\x80\x99m excited about the challenge, and looking forward to another year of dazzling new places, people, and experiences. I\xE2\x80\x99m even planning to take up celestial navigation, just for kicks.\n\n\
+    Right now I\xE2\x80\x99m taking advantage of my last little bit of time in Japan to explore Hokkaido, which thus far has been beautiful (if a bit cloudy and rainy). Next week I\xE2\x80\x99ll return to Tokyo, to meet Naomi when she comes up from Chichijima. Together, we\xE2\x80\x99re flying to Seattle, and she\xE2\x80\x99s going to visit for 17 days before we say goodbye until next spring. Then I\xE2\x80\x99ll soak up all the America I can for another month and a half, and we\xE2\x80\x99ll be back on the road. I plan to resume regular entries in October, but until then, I\xE2\x80\x99m going to enjoy my summer \xE2\x80\x93 I hope you do too!\n\n\
+    Kevin"
+  time: 2010-07-21 07:30:00 Z
+  title: Ship's Log Day 308
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 35.6456389636677
+    longitude: 139.842592949433
+  source: :message
+  text: |-
+    Hi everyone,
+    
+    Well, after a nice 6 months' rest- er, I mean, 6 months' traveling and learning Japanese, I'm starting to get back into sailing mode. Route planning is under way, gear is being repaired/purchased, and I'm studying celestial navigation. It's getting pretty exciting!
+    
+    Meanwhile, today happens to be the 1 year anniversary of Kallisti's setting sail from Seattle. To mark the occasion, I thought I'd send out scans of the article that KAZI magazine printed about us:
+    
+    http://picasaweb.google.com/liathin/KAZIMagazine?feat=directlink
+    
+    If anyone can translate, we'd love to hear from you! (I'm trying, but my Japanese is a long ways from fluent still...)
+    
+    Cheers,
+    Kevin
+  time: 2010-09-15 23:36:00 Z
+  title: Some light (Japanese) reading
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 35.644453850928
+    longitude: 139.845127601549
+  source: :message
+  text: |-
+    Hello again Kallisti followers!
+    
+    After an eventful six month stay in Yumenoshima marina, the time has finally come for Kallisti to resume her westward voyage. Having received our (mission-critical) last box of Costco supplies today, we're planning to depart tomorrow morning, Japanese time. Our tentative route will follow the Japanese coastline westward for a little ways, and then strike south across the infamous Kuroshio current before heading for Amami-oshima, a mid-sized island northeast of Okinawa. Of course, as always, our plans may change depending on weather and whim.
+    
+    As before, we'll be posting SPOT updates roughly daily, starting when we leave port in the morning. Assuming we manage to connect with the SailMail station in Brunei we'll also try to send an e-mail or two, but given the distance we might not be in range until a little later in our approach to Singapore.
+    
+    I also plan to resume my journal, and will hopefully send out a fresh batch of updates once we arrive at our next port.
+    
+    Until then, best wishes to everyone!
+    
+    Cheers,
+    Kevin
+  time: 2010-10-15 06:20:00 Z
+  title: Heading Out
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 35.64442
+    longitude: 139.8452
+  source: :spot
+  text: Traveled 0.9 nmi at 0.0 knots
+  time: 2010-10-16 02:24:21 Z
+  title: Day 395
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 34.44568
+    longitude: 138.98438
+  source: :spot
+  text: Traveled 83.5 nmi at 3.4 knots
+  time: 2010-10-17 03:04:41 Z
+  title: Day 396
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 33.77855
+    longitude: 138.70018
+  source: :spot
+  text: Traveled 42.5 nmi at 1.8 knots
+  time: 2010-10-18 03:13:30 Z
+  title: Day 397
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 32.38282
+    longitude: 138.13312
+  source: :spot
+  text: Traveled 88.5 nmi at 3.8 knots
+  time: 2010-10-19 02:33:21 Z
+  title: Day 398
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 31.98311
+    longitude: 136.55263
+  source: :spot
+  text: Traveled 83.8 nmi at 3.4 knots
+  time: 2010-10-20 03:07:30 Z
+  title: Day 399
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 29.84946
+    longitude: 133.40703
+  source: :spot
+  text: Traveled 206.5 nmi at 4.3 knots
+  time: 2010-10-22 03:31:26 Z
+  title: Day 401
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 29.08344
+    longitude: 131.66776
+  source: :spot
+  text: Traveled 101.9 nmi at 4.3 knots
+  time: 2010-10-23 03:10:00 Z
+  title: Day 402
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 28.38182
+    longitude: 129.49699
+  source: :spot
+  text: Traveled 121.8 nmi at 4.5 knots
+  time: 2010-10-24 06:08:42 Z
+  title: Day 403
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 28.38182
+    longitude: 129.49699
+  source: :message
+  text: |-
+    Hi all,
+    
+    What a trip.  Hit the worst weather we've seen yet, call it a force 9.  We were forced ahull twice and spent about 2 full days running at 6+ knots under bare poles.  I've never seen waves like these before.  Horizontal rain and foam whipping by so fast it stung to face it.  At one point we were actually taking in winch handles and the like in preparation for a knockdown, but luckily it never came to that.  Thankfully the wind was out of the NE.  I don't think we saw the sun for more than about 2 hours total in the entire week's trip. 
+    
+    If you've not a sailor, there's pretty much no way that words can do justice to the experience, but try to imagine it blowing so hard that you're forced to just lie in a ball on the ground and hope you don't get picked up and rolled over.  Meanwhile these 20+ foot waves are just going to town. 
+    
+    For all that - it was incredible.  Exhilarating.  Awesome in the literal sense.  I need a shower so, so badly. 
+    
+    Ted
+  time: 2010-10-24 07:48:00 Z
+  title: Made it to Amami-Oshima
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 28.38182
+    longitude: 129.49699
+  source: :message
+  text: |-
+    Seconded on the shower front.
+    
+    We didn't know it at the time, but apparently this was the 1000-miles-distant effects of typhoon Megi. Wikipedia tells me it was the strongest typhoon of 2010, and one of the strongest of the 21st century. From a bragging rights perspective, I'm glad we can say we were out at sea during it, but I'm also very glad we were as far away as we were. Just the outer reaches were plenty to convince me I never want to be near the real thing.
+    
+    Kevin
+    
+    P.S. I have a few journal entries that I managed to scratch out during the storm, but probably won't get around to posting them until we reach Okinawa (unless I find wifi someplace here).
+  time: 2010-10-24 08:11:00 Z
+  title: "Re: Made it to Amami-Oshima"
+- !ruby/object:Kallisti::Waypoint 
+  location: !ruby/object:Geocoordinate 
+    latitude: 28.38182
+    longitude: 129.49699
+  source: :message
+  text: |-
+    It seems we must have really pissed somebody off, because another typhoon's brewing, and it's headed straight towards us:
+     
+    http://www.jma.go.jp/en/typh/typh5.html
+    http://en.wikipedia.org/wiki/2010_Pacific_typhoon_season#Tropical_Storm_Chaba_.28Katring.29
+     
+    We had been considering getting out of here today and heading straight for Okinawa, but that plan's not looking very wise at the moment. So we'll ride things out here until the forecast clears up. Hopefully we can find a decent dock to tie off to, or things could get interesting... 
+     
+    On the bright side, I finally found a shower this morning - it's the little things that make me happy :)
+     
+    Cheers,
+    Kevin
+  time: 2010-10-25 06:19:00 Z
+  title: When it rains, it pours (in this case literally)

@@ -70,7 +70,7 @@ class Kallisti::Voyage
 			# metadata
 			"\t<name>#{@name}</name>\n" <<
 			"\t<description>#{@description}</description>\n" <<
-				( @author ? "\t\t<atom:author>#{@author}</atom:author>\n" : "" ) <<
+				( @author ? "\t<atom:author>#{@author}</atom:author>\n" : "" ) <<
 			
 			# icon styles
 			(kml_style_string % ['location', 'http://maps.google.com/mapfiles/kml/shapes/sailing.png']) <<
@@ -99,7 +99,7 @@ class Kallisti::Voyage
 				# <styleUrl>
 				( options[:time_info] ? ( "\t\t<TimeSpan>\n\t\t\t<begin>#{@waypoints.first.time.to_kml}</begin>\n\t\t\t<end>#{@waypoints.last.time.to_kml}</end>\n\t\t</TimeSpan>\n" ) : "" ) <<
 				("\t\t<description>%s nmi</description>" % separateKs("%.2f" % @distance)) <<
-				("\t\t<LineString>\n\t\t\t<coordinates>%s</coordinates>\n\t\t</LineString>\n" % @waypoints.select(&:known_location?).map{|point| "%f,%f" % [point.location.longitude, point.location.latitude] }.join(' ')) <<
+				("\t\t<LineString>\n\t\t\t<coordinates>%s</coordinates>\n\t\t</LineString>\n" % @waypoints.select{|p| p.known_location? }.map{|point| "%f,%f" % [point.location.longitude, point.location.latitude] }.join(' ')) <<
 			"\t</Placemark>\n" <<
 			
 		"</Document>\n" <<

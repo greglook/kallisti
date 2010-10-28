@@ -178,12 +178,18 @@ def update_spots
 	end
 	
 	# return if no updates
-	return unless mails and not mails.empty?
+	unless mails and not mails.empty?
+		print "No new SPOTs found.\n"
+		return
+	end
 	
 	# fetch mail data
 	mails = profile "Fetching #{mails.length} messages" do
 		mails.collect {|id| $imap.fetch(id, ['ENVELOPE', 'BODY[TEXT]'])[0] }
 	end
+	
+	deduped = []
+	added = []
 	
 	# process spot mails
 	profile "Processing messages" do mails.each do |mail|
@@ -200,8 +206,23 @@ def update_spots
 		raise "Could not parse latitude from SPOT message body: #{body}" unless latitude.is_a? Float
 		raise "Could not parse longitude from SPOT message body: #{body}" unless longitude.is_a? Float
 		
-		$voyage.add_point Waypoint.new(:spot, time, Geocoordinate.new(latitude, longitude))
+		point = Kallisti::Waypoint.new(:spot, time, Geocoordinate.new(latitude, longitude))
+		if $voyage.add_point point
+			added << point
+		else
+			deduped << point
+		end
 	end end
+	
+	unless deduped.empty?
+		print "Deduplicated #{not_added.size} SPOTs:\n"
+		deduped.each {|point| print point, "\n" }
+	end
+	
+	unless added.empty?
+		print "Added #{added.size} SPOTs to voyage:\n"
+		added.each {|point| print point, "\n" }
+	end
 end
 
 
@@ -219,7 +240,10 @@ def update_sailmail
 	mails = profile("Checking for new SailMail messages since " << last_updated) { $imap.search(['SEEN', 'FROM', $config[:sailmail_address], 'SINCE', last_updated]) }
 	
 	# return if no updates
-	return unless mails and not mails.empty?
+	unless mails and not mails.empty?
+		print "No new SailMail messages found.\n"
+		return
+	end
 	
 	# fetch mail data
 	mails = profile "Fetching #{mails.length} messages" do
@@ -227,6 +251,9 @@ def update_sailmail
 	end
 	
 	address_regex = Regexp.new($config[:sailmail_address], Regexp::IGNORECASE)
+	
+	deduped = []
+	added = []
 	
 	# process spot mails
 	profile("Processing messages") do mails.each do |mail|
@@ -239,15 +266,39 @@ def update_sailmail
 		body.gsub!(address_regex, '--- ADDRESS REDACTED ---')
 		body.gsub!(/=\r\n/, '')
 		
-		raise "Could not parse time from SPOT message body: #{body}" unless time.is_a? Time
+		raise "Could not parse time from SailMail message body: #{body}" unless time.is_a? Time
 		
-		$voyage.add_point Waypoint.new(:sailmail, time, nil, subject, body.chomp)
+		point = Kallisti::Waypoint.new(:sailmail, time, nil, subject, body.chomp)
+		if $voyage.add_point point
+			added << point
+		else
+			deduped << point
+		end
 	end end
+	
+	unless deduped.empty?
+		print "Deduplicated #{not_added.size} SailMails:\n"
+		deduped.each {|point| print point, "\n" }
+	end
+	
+	unless added.empty?
+		print "Added #{added.size} SailMails to voyage:\n"
+		added.each {|point| print point, "\n" }
+	end
 end
 
 
 
 ##### SCRIPT ACTIONS #####
+
+$actions << {
+	:name => 'config',
+	:desc => "Prints out the current configuration",
+	:proc => Proc.new do
+		load_config
+		$config.each {|k, v| print "#{k.to_s}: #{v}\n" }
+	end
+}
 
 $actions << {
 	:name => 'configure',
@@ -260,6 +311,7 @@ $actions << {
 		load_config
 		$config[key.intern] = value
 		save_config
+		print "Set configuration value for #{key.to_s}\n"
 	end
 }
 
@@ -283,7 +335,7 @@ $actions << {
 	:desc => "Prints a summary of the entire voyage",
 	:proc => Proc.new do
 		load_data
-		print $voyage.to_s, "\n"
+		print $voyage, "\n"
 	end
 }
 
@@ -297,7 +349,7 @@ $actions << {
 		
 		load_data
 		range = from..to
-		$voyage.legs.each_with_index {|leg, i| print("%3d. %s\n" % [i, leg]) if ( range === leg.from ) or ( range === leg.to ) }
+		$voyage.legs.each_with_index {|leg, i| print("%2d. %s\n" % [i+1, leg]) if ( range === leg.from ) or ( range === leg.to ) }
 	end
 }
 
@@ -311,7 +363,7 @@ $actions << {
 		
 		load_data
 		range = from..to
-		$voyage.waypoints.each_with_index {|point, i| print("%3d. %s\n" % [i, point]) if range === point.time }
+		$voyage.waypoints.each_with_index {|point, i| print("%3d. %s\n" % [i+1, point]) if range === point.time }
 	end
 }
 
@@ -417,7 +469,7 @@ $actions << {
 		load_config
 		load_data
 		open_imap
-		update_spots
+		added = update_spots
 		close_imap
 		reroute_data
 		save_data
@@ -425,13 +477,13 @@ $actions << {
 }
 
 $actions << {
-	:name => 'update-sailmails',
+	:name => 'update-sailmail',
 	:desc => "Connects to the configured mail account to check for SailMail messages",
 	:proc => Proc.new do
 		load_config
 		load_data
 		open_imap
-		update_sailmails
+		update_sailmail
 		close_imap
 		reroute_data
 		save_data
@@ -440,17 +492,17 @@ $actions << {
 
 $actions << {
 	:name => 'update',
-	:desc => "Equivalent to the actions 'spot', 'sailmail', 'calculate', then 'show'",
+	:desc => "Equivalent to the actions 'update-spots', 'update-sailmail', then 'show'",
 	:proc => Proc.new do
 		load_config
 		load_data
 		open_imap
 		update_spots
-		update_sailmails
+		update_sailmail
 		close_imap
 		reroute_data
 		save_data
-		print $voyage.summary, "\n"
+		print "\n", $voyage, "\n"
 	end
 }
 
@@ -459,17 +511,15 @@ $actions << {
 	:args => "[style]",
 	:desc => "Prints a KML file in either 'map' or 'earth' style",
 	:proc => Proc.new do |style|
-		raise "Must supply a KML style" unless style
-		
 		options = { }
-		if style.downcase == 'earth'
-			options[:time_info] = true
-			options[:leg_folders] = true
-		elsif style.downcase == 'map'
-			options[:time_info] = false
-			options[:leg_folders] = false
-		else
-			print "Unknown KML style '#{style}', should be one of 'map', 'earth'\n"
+		if style
+			if style.downcase == 'earth'
+				options[:time_info] = true
+				options[:leg_folders] = true
+			elsif style.downcase == 'map'
+				options[:time_info] = false
+				options[:leg_folders] = false
+			end
 		end
 		
 		load_data

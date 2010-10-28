@@ -46,8 +46,20 @@ class Voyage
 	
 	# return a string representation of this voyage
 	def to_s
-		# TODO: implement to_s
-		super.to_s
+		s = "=== #{@name} ===\n#{@desc}\n"
+		s << "Author: #{@author}\n" if @author
+		
+		s << "\n"
+		
+		unless @waypoints.empty?
+			s << "Voyage begun %s\n" % @waypoints.first.time.strftime('%Y-%m-%d')
+			s << "Last updated %s\n" % @waypoints.last.time.strftime('%Y-%m-%d')
+			s << "%.2f nautical miles covered in %d days\n\n" % [@distance, @duration/86400]
+		end
+		
+		s << "%d waypoints in %d legs" % [@waypoints.size, @legs.size]
+		
+		s
 	end
 	
 	

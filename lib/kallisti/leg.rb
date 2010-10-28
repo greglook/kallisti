@@ -16,6 +16,11 @@ class Leg
 		( @from <= time ) and ( time < @to )
 	end
 	
+	def to_s
+		days = (@to - @from)/86400
+		"%s - %s %s (%d days)" % [@from.strftime('%Y-%m-%d'), @to.strftime('%Y-%m-%d'), @name, days]
+	end
+	
 	# waypoints are ordered by time
 	def <=>(other)
 		@from <=> other.from
